@@ -1,6 +1,6 @@
 ## AWS Safe Commit
 
-Prevent your AWS keys from being exposed accidentall
+Prevent your AWS keys from being exposed accidentally
 
 Comand:
 
