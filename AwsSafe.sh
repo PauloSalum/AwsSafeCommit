@@ -7,8 +7,7 @@ function update() {
 	if [ -d "$d" ]; then
 		cd $d >/dev/null
 		if [ -d ".git" ]; then
-			echo -e "\n${HIGHLIGHT} Setup AWS finder pre-commit hook at $(pwd)$NORMAL"
-			sudo cp $HOME/pre-commit $PWD/.git/hooks/pre-commit
+			git init
 		else
 			scan *
 		fi
@@ -22,7 +21,9 @@ function scan() {
 	done
 }
 
+git config --global init.templatedir '~/.git-templates'
+mkdir -p ~/.git-templates/hooks
+curl -o ~/.git-templates/hooks/pre-commit https://gist.githubusercontent.com/PauloSalum/913e513a7c16e5b673bc5beae4e95fff/raw/7ed2a4db70cf0d9b114feeaa0139900a0592489a/pre-commit
+chmod a+x ~/.git-templates/hooks/pre-commit
 echo -e "${HIGHLIGHT}Scanning ${HOME}${NORMAL}"
-echo "downloading"
-sudo curl -o $HOME/pre-commit https://gist.githubusercontent.com/PauloSalum/913e513a7c16e5b673bc5beae4e95fff/raw/7ed2a4db70cf0d9b114feeaa0139900a0592489a/pre-commit
 scan ${HOME}
