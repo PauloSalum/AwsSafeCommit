@@ -7,7 +7,6 @@ function update() {
 	if [ -d "$d" ]; then
 		cd $d >/dev/null
 		if [ -d ".git" ]; then
-			rm -f $PWD/.git/hooks/pre-commit
 			git init
 		else
 			scan *
