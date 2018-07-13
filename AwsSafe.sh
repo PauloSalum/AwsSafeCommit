@@ -23,7 +23,7 @@ function scan() {
 
 git config --global init.templatedir '~/.git-templates'
 mkdir -p ~/.git-templates/hooks
-curl -o ~/.git-templates/hooks/pre-commit https://gist.githubusercontent.com/PauloSalum/913e513a7c16e5b673bc5beae4e95fff/raw/7ed2a4db70cf0d9b114feeaa0139900a0592489a/pre-commit
+curl -o ~/.git-templates/hooks/pre-commit https://gist.githubusercontent.com/PauloSalum/47330177a5480aafd8bd76109d656fc4/raw/a25f420769a108b129e98ec4e00ed0708d8c7612/pre-commit.sh
 chmod a+x ~/.git-templates/hooks/pre-commit
 echo -e "${HIGHLIGHT}Scanning ${HOME}${NORMAL}"
 scan ${HOME}
