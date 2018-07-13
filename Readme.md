@@ -1,2 +1,1 @@
-[0m[01;32mAwsSafe.sh[0m*
-Readme.md
+sh https://raw.githubusercontent.com/PauloSalum/AwsSafeCommit/master/AwsSafe.sh
