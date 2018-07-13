@@ -5,7 +5,7 @@ Prevent your AWS keys from being exposed accidentall
 Comand:
 
 ```sh
-https://raw.githubusercontent.com/PauloSalum/AwsSafeCommit/master/AwsSafe.sh
+bash <(curl -s https://raw.githubusercontent.com/PauloSalum/AwsSafeCommit/master/AwsSafe.sh)
 ```
 
 What it will do?
@@ -16,6 +16,4 @@ What it will do?
 
 Refs:
 
-> https://gist.github.com/PauloSalum/47330177a5480aafd8bd76109d656fc4
-> https://gist.github.com/ColCh/9d48693276aac50cac37a9fce23f9bda
-> https://gist.github.com/czardoz/b8bb58ad10f4063209bd
+> https://gist.github.com/PauloSalum/47330177a5480aafd8bd76109d656fc4 > https://gist.github.com/ColCh/9d48693276aac50cac37a9fce23f9bda > https://gist.github.com/czardoz/b8bb58ad10f4063209bd
